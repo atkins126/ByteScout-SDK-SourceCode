@@ -32,7 +32,7 @@ namespace PDF2JPEG
 
             for (int i = 0; i < renderer.GetPageCount(); i++)
             {
-                // Render document page to PNG image file.
+                // Render document page to JPEG image file.
                 renderer.Save("image" + i + ".jpg", RasterImageFormat.JPEG, i, 96);
             }
 

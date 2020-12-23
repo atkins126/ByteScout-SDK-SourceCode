@@ -26,7 +26,7 @@ Class Program
         renderer.LoadDocumentFromFile("multipage.pdf")
 
         For i As Integer = 0 To renderer.GetPageCount() - 1
-            ' Render document page to PNG image file.
+            ' Render document page to JPEG image file.
             renderer.Save("image" & i & ".jpg", RasterImageFormat.JPEG, i, 96)
         Next
 
